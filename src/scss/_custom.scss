@@ -1,0 +1,42 @@
+// Custom.scss
+// Option B: Include parts of CoreUI
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/@coreui/coreui/scss/functions";
+
+// 2. Include any default variable overrides here
+$body-bg: #000;
+$body-color: #111;
+// 3. Include remainder of required CoreUI stylesheets
+@import "../node_modules/@coreui/coreui/scss/variables";
+
+// 4. Include any default map overrides here
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+);
+// 5. Include remainder of required parts
+@import "../node_modules/@coreui/coreui/scss/maps";
+@import "../node_modules/@coreui/coreui/scss/mixins";
+@import "../node_modules/@coreui/coreui/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../node_modules/@coreui/coreui/scss/utilities";
+@import "../node_modules/@coreui/coreui/scss/reboot";
+@import "../node_modules/@coreui/coreui/scss/type";
+@import "../node_modules/@coreui/coreui/scss/images";
+@import "../node_modules/@coreui/coreui/scss/containers";
+@import "../node_modules/@coreui/coreui/scss/grid";
+@import "../node_modules/@coreui/coreui/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/@coreui/coreui/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+$custom-colors: (
+  "custom-color": #900,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
