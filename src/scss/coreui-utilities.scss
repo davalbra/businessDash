@@ -1,0 +1,23 @@
+/*!
+ * CoreUI PRO - HTML, CSS, and JavaScript UI Components Library
+ * @version v4.4.3
+ * @link https://coreui.io/pro/
+ * Copyright (c) 2021 creativeLabs Łukasz Holeczek
+ * License (https://coreui.io/pro/license/)
+ */
+
+// Configuration
+@import "functions";
+@import "variables";
+@import "maps";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
