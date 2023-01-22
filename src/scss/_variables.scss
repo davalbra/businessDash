@@ -102,7 +102,7 @@ $dark: $gray-900;
 $dark-50: shift-color($dark, -70);
 $dark-25: shift-color($dark, -80);
 
-// scss-docs-start theme-colors-map
+// scss-docs-start theme-colors-mapds
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
@@ -1502,93 +1502,110 @@ $theme-colors: (
 // scss-docs-end carousel-variables
 
 // scss-docs-start sidebar-variables
-// $sidebar-width:                            16rem;
+// $sidebar-width: 16rem;
 // $sidebar-widths: (
 //   sm: 12rem,
 //   lg: 20rem,
-//   xl: 24rem
+//   xl: 24rem,
 // );
-// $sidebar-padding-y:                        0;
-// $sidebar-padding-x:                        0;
-// $sidebar-color:                            $high-emphasis-light;
-// $sidebar-bg:                               $gray-base;
-// $sidebar-border-width:                     0;
-// $sidebar-border-color:                     transparent;
-// $sidebar-transition:                       margin-left .15s, margin-right .15s, box-shadow .075s, transform .15s, width .15s, z-index 0s ease .15s;
-// $sidebar-reliant-transition:               width .15s;
+// $sidebar-padding-y: 0;
+// $sidebar-padding-x: 0;
+// $sidebar-color: $high-emphasis-light;
+// $sidebar-bg: $gray-base;
+// $sidebar-border-width: 0;
+// $sidebar-border-color: transparent;
+// $sidebar-transition: margin-left 0.15s, margin-right 0.15s, box-shadow 0.075s,
+//   transform 0.15s, width 0.15s, z-index 0s ease 0.15s;
+// $sidebar-reliant-transition: width 0.15s;
 
-// $sidebar-brand-height:                     4rem;
-// $sidebar-brand-color:                      $high-emphasis-light;
-// $sidebar-brand-bg:                         rgba($black, .2);
+// $sidebar-brand-height: 4rem;
+// $sidebar-brand-color: $high-emphasis-light;
+// $sidebar-brand-bg: rgba($black, 0.2);
 
-// $sidebar-header-height:                    4rem;
-// $sidebar-header-padding-y:                 .75rem;
-// $sidebar-header-padding-x:                 1rem;
-// $sidebar-header-bg:                        rgba($black, .2);
-// $sidebar-header-height-transition:         height .15s, padding .15s;
+// $sidebar-header-height: 4rem;
+// $sidebar-header-padding-y: 0.75rem;
+// $sidebar-header-padding-x: 1rem;
+// $sidebar-header-bg: rgba($black, 0.2);
+// $sidebar-header-height-transition: height 0.15s, padding 0.15s;
 
-// $sidebar-narrow-width:                     4rem;
+// $sidebar-narrow-width: 4rem;
 
-// $sidebar-backdrop-bg:                      $black;
-// $sidebar-backdrop-opacity:                 .5;
-// $sidebar-backdrop-transition:              opacity .15s linear;
+// $sidebar-backdrop-bg: $black;
+// $sidebar-backdrop-opacity: 0.5;
+// $sidebar-backdrop-transition: opacity 0.15s linear;
 
-// $sidebar-nav-title-padding-y:              .75rem;
-// $sidebar-nav-title-padding-x:              1rem;
-// $sidebar-nav-title-margin-top:             1rem;
-// $sidebar-nav-title-color:                  $medium-emphasis-light;
-// $sidebar-nav-title-transition:             height .15s, margin .15s;
+// $sidebar-nav-title-padding-y: 0.75rem;
+// $sidebar-nav-title-padding-x: 1rem;
+// $sidebar-nav-title-margin-top: 1rem;
+// $sidebar-nav-title-color: $medium-emphasis-light;
+// $sidebar-nav-title-transition: height 0.15s, margin 0.15s;
 
-// $sidebar-nav-link-padding-y:               .8445rem;
-// $sidebar-nav-link-padding-x:               1rem;
-// $sidebar-nav-link-color:                   $medium-emphasis-light;
-// $sidebar-nav-link-bg:                      transparent;
-// $sidebar-nav-link-transition:              background .15s ease, color .15s ease;
-// $sidebar-nav-link-icon-color:              $medium-emphasis-light;
+// $sidebar-nav-link-padding-y: 0.8445rem;
+// $sidebar-nav-link-padding-x: 1rem;
+// $sidebar-nav-link-color: $medium-emphasis-light;
+// $sidebar-nav-link-bg: transparent;
+// $sidebar-nav-link-transition: background 0.15s ease, color 0.15s ease;
+// $sidebar-nav-link-icon-color: $medium-emphasis-light;
 
-// $sidebar-nav-link-hover-color:             $high-emphasis-light;
-// $sidebar-nav-link-hover-bg:                rgba($white, .05);
-// $sidebar-nav-link-hover-icon-color:        $high-emphasis-light;
+// $sidebar-nav-link-hover-color: $high-emphasis-light;
+// $sidebar-nav-link-hover-bg: rgba($white, 0.05);
+// $sidebar-nav-link-hover-icon-color: $high-emphasis-light;
 
-// $sidebar-nav-link-active-color:            $high-emphasis-light;
-// $sidebar-nav-link-active-bg:               rgba($white, .05);
-// $sidebar-nav-link-active-icon-color:       $high-emphasis-light;
+// $sidebar-nav-link-active-color: $high-emphasis-light;
+// $sidebar-nav-link-active-bg: rgba($white, 0.05);
+// $sidebar-nav-link-active-icon-color: $high-emphasis-light;
 
-// $sidebar-nav-link-disabled-color:          $disabled-light;
-// $sidebar-nav-link-disabled-icon-color:     $sidebar-nav-link-icon-color;
+// $sidebar-nav-link-disabled-color: $disabled-light;
+// $sidebar-nav-link-disabled-icon-color: $sidebar-nav-link-icon-color;
 
-// $sidebar-nav-icon-width:                   4rem;
-// $sidebar-nav-icon-height:                  1.25rem;
-// $sidebar-nav-icon-font-size:               $sidebar-nav-icon-height;
+// $sidebar-nav-icon-width: 4rem;
+// $sidebar-nav-icon-height: 1.25rem;
+// $sidebar-nav-icon-font-size: $sidebar-nav-icon-height;
 
-// $sidebar-nav-group-bg:                     rgba(0, 0, 0, .2);
-// $sidebar-nav-group-transition:             background .15s ease-in-out;
-// $sidebar-nav-group-items-transition:       height .15s ease;
-// $sidebar-nav-group-toggle-show-color:      $sidebar-nav-link-color;
+// $sidebar-nav-group-bg: rgba(0, 0, 0, 0.2);
+// $sidebar-nav-group-transition: background 0.15s ease-in-out;
+// $sidebar-nav-group-items-transition: height 0.15s ease;
+// $sidebar-nav-group-toggle-show-color: $sidebar-nav-link-color;
 
-// $sidebar-nav-group-indicator-color:        $medium-emphasis-light;
-// $sidebar-nav-group-indicator:              str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-group-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
-// $sidebar-nav-group-indicator-hover-color:  $sidebar-nav-link-hover-color;
-// $sidebar-nav-group-indicator-hover:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-group-indicator-hover-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
-// $sidebar-nav-group-indicator-transition:   transform .15s;
+// $sidebar-nav-group-indicator-color: $medium-emphasis-light;
+// $sidebar-nav-group-indicator: str-replace(
+//   url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-group-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"),
+//   "#",
+//   "%23"
+// );
+// $sidebar-nav-group-indicator-hover-color: $sidebar-nav-link-hover-color;
+// $sidebar-nav-group-indicator-hover: str-replace(
+//   url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-group-indicator-hover-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"),
+//   "#",
+//   "%23"
+// );
+// $sidebar-nav-group-indicator-transition: transform 0.15s;
 
-// $sidebar-footer-height:                    auto;
-// $sidebar-footer-padding-y:                 .75rem;
-// $sidebar-footer-padding-x:                 1rem;
-// $sidebar-footer-bg:                        rgba($black, .2);
-// $sidebar-footer-height-transition:         height .15s, padding .15s;
+// $sidebar-footer-height: auto;
+// $sidebar-footer-padding-y: 0.75rem;
+// $sidebar-footer-padding-x: 1rem;
+// $sidebar-footer-bg: rgba($black, 0.2);
+// $sidebar-footer-height-transition: height 0.15s, padding 0.15s;
 
-// $sidebar-toggler-height:                   3rem;
-// $sidebar-toggler-bg:                       rgba($black, .2);
-// $sidebar-toggler-transition:               transform .15s;
+// $sidebar-toggler-height: 3rem;
+// $sidebar-toggler-bg: rgba($black, 0.2);
+// $sidebar-toggler-transition: transform 0.15s;
 
-// $sidebar-toggler-indicator-width:          4rem;
-// $sidebar-toggler-indicator-height:         3rem;
-// $sidebar-toggler-indicator-color:          $gray-600;
-// $sidebar-toggler-indicator:                str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-toggler-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
-// $sidebar-toggler-hover-bg:                 rgba(0, 0, 0, .3);
-// $sidebar-toggler-hover-indicator-color:    $sidebar-nav-link-hover-color;
-// $sidebar-toggler-hover-indicator:          str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-toggler-hover-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23");
+// $sidebar-toggler-indicator-width: 4rem;
+// $sidebar-toggler-indicator-height: 3rem;
+// $sidebar-toggler-indicator-color: $gray-600;
+// $sidebar-toggler-indicator: str-replace(
+//   url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-toggler-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"),
+//   "#",
+//   "%23"
+// );
+// $sidebar-toggler-hover-bg: rgba(0, 0, 0, 0.3);
+// $sidebar-toggler-hover-indicator-color: $sidebar-nav-link-hover-color;
+// $sidebar-toggler-hover-indicator: str-replace(
+//   url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-toggler-hover-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"),
+//   "#",
+//   "%23"
+// );
 // scss-docs-end sidebar-variables
 
 // Footer

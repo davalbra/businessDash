@@ -3,15 +3,12 @@
 @import "root";
 @import "variables";
 
-$enable-ltr: true;
-$enable-rtl: true;
 $usuarios: #f48fb1;
 $proveedores: #90caf9;
 $ventas: #a5d6a7;
 $ganancias: #ffe082;
 $satisfaccion: #ffccbc;
 
-// scss-docs-start theme-colors-map
 $new-colors: (
   "usuarios": $usuarios,
   "proveedores": $proveedores,
@@ -19,6 +16,7 @@ $new-colors: (
   "ganancias": $ganancias,
   "satisfaccion": $satisfaccion,
 );
+
 $theme-colors: map-merge($theme-colors, $new-colors);
 
 // Import styles with default layout.

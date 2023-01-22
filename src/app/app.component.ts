@@ -1,68 +1,24 @@
-import { Component } from '@angular/core';
-import { INavData } from '@coreui/angular';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+
+import { IconSetService } from '@coreui/icons-angular';
+import { iconSubset } from './icons/icon-subset';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'businessdash';
-  navItems: INavData[] = [
-    {
-      name: 'Dashboard',
-    },
-  ];
-  constructor() {
-    interface INavAttributes {
-      [propName: string]: any;
-    }
+  title = 'Dashboard';
 
-    interface INavWrapper {
-      attributes: INavAttributes;
-      element: string;
-    }
-
-    interface INavBadge {
-      text: string;
-      color: string;
-      size?: string;
-      class?: string;
-    }
-
-    interface INavLabel {
-      class?: string;
-      variant: string;
-    }
-
-    interface INavLinkProps {
-      queryParams?: { [k: string]: any };
-      fragment?: string;
-      queryParamsHandling?: 'merge' | 'preserve' | '';
-      preserveFragment?: boolean;
-      skipLocationChange?: boolean;
-      replaceUrl?: boolean;
-      state?: { [k: string]: any };
-      routerLinkActiveOptions?: { exact: boolean };
-      routerLinkActive?: string | string[];
-    }
-
-    interface INavData {
-      name?: string;
-      url?: string | any[];
-      href?: string;
-      icon?: string;
-      iconComponent?: any;
-      badge?: INavBadge;
-      title?: boolean;
-      children?: INavData[];
-      variant?: string;
-      attributes?: INavAttributes;
-      divider?: boolean;
-      class?: string;
-      label?: INavLabel;
-      wrapper?: INavWrapper;
-      linkProps?: INavLinkProps;
-    }
+  constructor(
+    private router: Router,
+    private titleService: Title,
+    private iconSetService: IconSetService
+  ) {
+    titleService.setTitle(this.title);
+    // iconSet singleton
+    iconSetService.icons = { ...iconSubset };
   }
 }
