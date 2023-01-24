@@ -28,6 +28,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "chart.js": "^3.9.1",
+    "kute.js": "^2.2.4",
     "ngx-perfect-scrollbar": "^10.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

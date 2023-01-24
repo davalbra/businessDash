@@ -28,7 +28,7 @@
               "src/scss/coreui.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "scripts": ["src/assets/js/animate.js"],
             "allowedCommonJsDependencies": [
               "chart.js",
               "@coreui/chartjs/dist/js/coreui-chartjs.js"

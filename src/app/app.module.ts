@@ -7,7 +7,6 @@ import {
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import {
   PERFECT_SCROLLBAR_CONFIG,
   PerfectScrollbarConfigInterface,
@@ -43,14 +42,12 @@ import {
   UtilitiesModule,
   WidgetModule,
 } from '@coreui/angular';
-
 import { IconModule, IconSetService } from '@coreui/icons-angular';
 
 import { ChartjsModule } from '@coreui/angular-chartjs';
 import { SidebarMainComponent } from './container/sideBar/sidebar-main/sidebar-main.component';
 import { SidebarFooterComponent } from './container/sideBar/sidebar-footer/sidebar-footer.component';
 import { SidebarHeaderComponent } from './container/sideBar/sidebar-header/sidebar-header.component';
-
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 };
@@ -64,6 +61,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   ],
   imports: [
     AppRoutingModule,
+
     GridModule,
     WidgetModule,
     TableModule,

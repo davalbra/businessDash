@@ -60,6 +60,16 @@
 @import "sidebar";
 @import "subheader";
 
+// other
+// perfect scrollbar theming for use with [perfectScrollbar] directive
+//@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+@import "layout";
+
+// Some temp fixes
+@import "fixes";
+
+// Prism.js
+@import "examples";
 // Helpers
 @import "helpers";
 
