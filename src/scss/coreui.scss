@@ -7,6 +7,7 @@
  */
 
 // scss-docs-start import-stack
+
 // Configuration
 @import "functions";
 @import "variables";
@@ -14,6 +15,10 @@
 @import "mixins";
 @import "utilities";
 
+@import "@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "@coreui/chartjs/scss/coreui-chartjs";
 // Layout & components
 @import "root";
 @import "reboot";
@@ -77,3 +82,4 @@
 @import "utilities/api";
 @import "utilities/bg-gradients";
 // scss-docs-end import-stack
+// Import styles with default layout.

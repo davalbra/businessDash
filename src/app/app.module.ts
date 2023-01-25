@@ -3,6 +3,7 @@ import {
   HashLocationStrategy,
   LocationStrategy,
   PathLocationStrategy,
+  CommonModule,
 } from '@angular/common';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -41,6 +42,7 @@ import {
   TabsModule,
   UtilitiesModule,
   WidgetModule,
+  FormModule,
 } from '@coreui/angular';
 import { IconModule, IconSetService } from '@coreui/icons-angular';
 
@@ -48,6 +50,8 @@ import { ChartjsModule } from '@coreui/angular-chartjs';
 import { SidebarMainComponent } from './container/sideBar/sidebar-main/sidebar-main.component';
 import { SidebarFooterComponent } from './container/sideBar/sidebar-footer/sidebar-footer.component';
 import { SidebarHeaderComponent } from './container/sideBar/sidebar-header/sidebar-header.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { ModelOneComponent } from './views/model/model-one/model-one.component';
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 };
@@ -58,6 +62,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     SidebarMainComponent,
     SidebarFooterComponent,
     SidebarHeaderComponent,
+    DashboardComponent,
+    ModelOneComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -66,6 +72,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     WidgetModule,
     TableModule,
     ChartjsModule,
+    CommonModule,
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -80,6 +87,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     PerfectScrollbarModule,
     NavModule,
     ButtonModule,
+    FormModule,
     UtilitiesModule,
     ButtonGroupModule,
     ReactiveFormsModule,

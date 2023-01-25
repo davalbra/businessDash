@@ -1,0 +1,21 @@
+:host {
+  .legend {
+    small {
+      font-size: x-small;
+    }
+  }
+}
+.nav-underline {
+  border-bottom: none;
+}
+.nav-underline {
+  .nav-link.active,
+  .show > .nav-link {
+    color: var();
+    background: transparent;
+    border-color: var();
+  }
+}
+.nav-link {
+  font-size: 0.8rem;
+}

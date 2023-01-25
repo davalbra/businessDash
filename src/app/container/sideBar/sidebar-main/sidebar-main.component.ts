@@ -27,11 +27,11 @@ export const navItems: INavData[] = [
   },
   {
     title: true,
-    name: 'Theme',
+    name: 'Models',
   },
   {
-    name: 'Colors',
-    url: '/theme/colors',
+    name: 'E-comerce',
+    url: '/model-one',
     iconComponent: { name: 'cil-drop' },
   },
   {

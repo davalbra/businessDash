@@ -1,0 +1,106 @@
+<c-container fluid>
+  <c-row class="justify-content-center">
+    <c-col xs="12" md="8">
+      <c-card class="mb-4">
+        <c-card-body>
+          <c-row>
+            <c-col class="" xs="12" lg="9">
+              <c-nav variant="underline">
+                <c-nav-item>
+                  <a
+                    [active]="true"
+                    [cTabContent]="tabContent"
+                    [routerLink]
+                    [tabPaneIdx]="0"
+                    cNavLink
+                    (click)="setTrafficPeriod('Day')"
+                  >
+                    DAILY
+                  </a>
+                </c-nav-item>
+                <c-nav-item>
+                  <a
+                    [cTabContent]="tabContent"
+                    [routerLink]
+                    [tabPaneIdx]="1"
+                    cNavLink
+                    (click)="setTrafficPeriod('week')"
+                  >
+                    WEEKLY
+                  </a>
+                </c-nav-item>
+                <c-nav-item>
+                  <a
+                    [cTabContent]="tabContent"
+                    [routerLink]
+                    [tabPaneIdx]="2"
+                    cNavLink
+                    (click)="setTrafficPeriod('Month')"
+                  >
+                    MONTHLY
+                  </a>
+                </c-nav-item>
+                <c-nav-item>
+                  <a
+                    [cTabContent]="tabContent"
+                    [routerLink]
+                    [tabPaneIdx]="3"
+                    cNavLink
+                    (click)="setTrafficPeriod('Year')"
+                  >
+                    YEARLY
+                  </a>
+                </c-nav-item>
+              </c-nav>
+              <c-tab-content #tabContent="cTabContent" [activeTabPaneIdx]="1">
+                <c-tab-pane class=""> </c-tab-pane>
+                <c-tab-pane class=""> </c-tab-pane>
+                <c-tab-pane class=""> </c-tab-pane>
+                <c-tab-pane> </c-tab-pane>
+              </c-tab-content>
+            </c-col>
+            <c-col xs="12" lg="3" class="float-end">
+              <div class="legend text-end" ngPreserveWhitespaces>
+                <small>
+                  <sup>
+                    <span class="badge badge-pill badge-sm bg-info"
+                      >&nbsp;</span
+                    >
+                  </sup>
+                  <span>Online</span>
+                  &nbsp;&nbsp;
+                  <sup>
+                    <span class="badge badge-pill badge-sm bg-warning"
+                      >&nbsp;</span
+                    >
+                  </sup>
+                  <span>Store</span>
+                </small>
+              </div>
+            </c-col>
+          </c-row>
+          <c-chart
+            [data]="mainChart.data"
+            [height]="300"
+            [ngStyle]="{ 'marginTop.px': 40 }"
+            [options]="mainChart.options"
+            [type]="mainChart.type"
+          >
+            Main chart
+          </c-chart>
+        </c-card-body>
+      </c-card>
+    </c-col>
+    <c-col xs="12" md="4"> </c-col>
+  </c-row>
+  <c-row class="justify-content-center">
+    <c-col xs="12" sm="6" md="3"> </c-col>
+    <c-col xs="12" sm="6" md="3"> </c-col>
+    <c-col xs="12" sm="6" md="3"> </c-col>
+    <c-col xs="12" sm="6" md="3"> </c-col>
+  </c-row>
+  <c-row class="justify-content-center">
+    <c-col xs="12" md="4"> </c-col>
+    <c-col xs="12" md="8"> </c-col>
+  </c-row>
+</c-container>
